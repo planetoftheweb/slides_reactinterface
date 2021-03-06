@@ -52,6 +52,7 @@ function server() {
     notify: false,
     server: {
       baseDir: source,
+      port: 3110
     },
   });
 
