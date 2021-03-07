@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>01_03
           --
-          Customizing Installation</title>
+          Clean Installation</title>
       <link rel="stylesheet" href="../../../css/twemoji-amazing.css"/>
     <link rel="stylesheet" href="../../../css/bootstrap-rayveal.css"/>
     <link rel="stylesheet" href="../../../css/fontawesome.css"/>
@@ -63,8 +63,26 @@
                   <div class="d-flex justify-content-end align-items-right border-bottom p-2  bg-primary ">
                     <a class="text-decoration-none  fw-bolder link-light  link-primary" href="../../../notes/slides/01_03/index.html">
                       <i class="fas fa-file-alt mr-2 lh-1  text-light "></i>01_03
-                      Customizing Installation</a>
+                      Clean Installation</a>
                     <a class=" link-light  flex-fill ml-3 text-right" href="../../../?d=01_03&#">
+                      <i class="fab fa-slideshare"></i>
+                    </a>
+                  </div>
+                
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2 ">
+                    <a class="text-decoration-none  link-secondary  link-primary" href="../../../notes/slides/01_04/index.html">
+                      <i class="fas fa-file-alt mr-2 lh-1  text-primary "></i>01_04
+                      External Components</a>
+                    <a class=" link-secondary  flex-fill ml-3 text-right" href="../../../?d=01_04&#">
+                      <i class="fab fa-slideshare"></i>
+                    </a>
+                  </div>
+                
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2 ">
+                    <a class="text-decoration-none  link-secondary  link-primary" href="../../../notes/slides/01_05/index.html">
+                      <i class="fas fa-file-alt mr-2 lh-1  text-primary "></i>01_05
+                      Tailwind CSS</a>
+                    <a class=" link-secondary  flex-fill ml-3 text-right" href="../../../?d=01_05&#">
                       <i class="fab fa-slideshare"></i>
                     </a>
                   </div>
@@ -118,12 +136,12 @@
 
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
-<h1 id="customizing-installation">Customizing Installation <a class="direct-link" href="#customizing-installation"> </a></h1>
-<div class="slide-link"><a href="https://go.raybo.org/2sdu"><i class="fab fa-slideshare"></i> go.raybo.org/2sdu</a></div>
+<h1 id="clean-installation">Clean Installation <a class="direct-link" href="#clean-installation"> </a></h1>
+<div class="slide-link"><a href="https://go.raybo.org/3JPN"><i class="fab fa-slideshare"></i> go.raybo.org/3JPN</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>The setup for this project is a bit overkill, so lets pair it down a bit and install a few extra modules just like we would use on a real project.</p>
+<p>The setup for this project is a bit overkill, so lets pair it down a bit</p>
 <hr>
 <!-- .slide: data-state="layout-title" class="bg-dark"-->
 <h1 id="removing-files">Removing Files <a class="direct-link" href="#removing-files"> </a></h1>
@@ -242,83 +260,6 @@ import './App.css';
 <p>Add a Headline</p>
 <pre><code>&lt;h1&gt;Your Repos&lt;/h1&gt;
 </code></pre>
-<hr>
-<h1 id="react-icons">React Icons <a class="direct-link" href="#react-icons"> </a></h1>
-<ul>
-<li><a href="https://react-icons.github.io/react-icons/">React Icons</a></li>
-</ul>
-<pre><code class="language-sh">npm install react-icons --save
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>I'm going to start by installing a component library for React called React Icons. It's the easiest and most complete way to get different icon libraries installed in React.</p>
-<hr>
-<h1 id="importing-an-icon">Importing an Icon <a class="direct-link" href="#importing-an-icon"> </a></h1>
-<pre><code>import { ICONNAME } from &quot;react-icons/LIBNAME&quot;;
-...
-&lt;ICONNAME /&gt;
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>Once you've installed the library, whenever you want to use an icon, you can easily import it into the component. I'm a fan of Bootstrap Icons, so let's use those.</p>
-<p>To get the name of the icon, you simply go to it's page and click on the one you want. It will copy the name you need to import.</p>
-<pre><code class="language-jsx">import { BsFillBootstrapFill } from &quot;react-icons/bs&quot;;
-
-&lt;h1 className=&quot;text-5xl&quot;&gt;&lt;BsFillBootstrapFill className=&quot;inline-block text-red-400 align-top&quot; /&gt; Your Repos&lt;/h1&gt;
-</code></pre>
-<hr>
-<h2 id="installing-tailwind-css">Installing Tailwind CSS <a class="direct-link" href="#installing-tailwind-css"> </a></h2>
-<ul>
-<li><a href="https://tailwindcss.com/docs/guides/create-react-app">Tailwinds CSS</a></li>
-</ul>
-<pre><code class="language-bash">npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>Now, let's intall Tailwind CSS. Version 2.0 just released so some of these installation instructions might be different, make sure you check out the page here.</p>
-<p>Tailwind is a PostCSS plugin, so in addition to tailwind, we'll need postcss installed.</p>
-<hr>
-<h2 id="using-craco">Using Craco <a class="direct-link" href="#using-craco"> </a></h2>
-<pre><code class="language-bash">npm install @craco/craco
-</code></pre>
-<pre><code class="language-bash">&quot;start&quot;: &quot;craco start&quot;,
-&quot;build&quot;: &quot;craco build&quot;,
-&quot;test&quot;: &quot;craco test&quot;,
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>Because the current version of the Create React App doesn't yet support PostCSS8, we have to do one more installation, although by the time you read this that might be different.</p>
-<p>We'll install a utility that fixes this called Craco (Create React App Configuration Override), then we'll modify the scripts in our package.json to use these.</p>
-<hr>
-<h1 id="setting-tailwind-config">Setting Tailwind Config <a class="direct-link" href="#setting-tailwind-config"> </a></h1>
-<pre><code class="language-bash">npx tailwindcss init
-</code></pre>
-<pre><code class="language-js">purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>Tailwind requires a configuration file called tailwind.config.js and running the npx tailwindcss init command will generate one for you.</p>
-<p>By default installing Tailwind will install all of the styles, even if we don't use them. Thankfully, we can use a plugin called purgeCSS to get rid of what we don't need. We'll need to make one change to the generated config file, so that it takes care of this.</p>
-<hr>
-<h1 id="modifying-our-css">Modifying our CSS <a class="direct-link" href="#modifying-our-css"> </a></h1>
-<pre><code class="language-css">@tailwind base;
-@tailwind components;
-@tailwind utilities;
-</code></pre>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-<p>To finish up the Tailwind installation, we need to replace the code in our index.css file so that it uses the different pieces of Tailwind CSS.</p>
-<p>Now you can add Tailwind to your document.</p>
-<pre><code class="language-jsx">&lt;div className=&quot;App container mx-auto mt-3 font-thin&quot;&gt;
-  &lt;h1 className=&quot;text-5xl&quot;&gt;&lt;BsFillBootstrapFill className=&quot;inline-block text-red-400 align-top&quot; /&gt; Your Repos&lt;/h1&gt;
-&lt;/div&gt;
-</code></pre>
 
         </main>
         <aside class="aside aside-supplemental col col-md-3 col-lg-2 d-none d-md-block">
@@ -327,7 +268,7 @@ import './App.css';
             <div class="">
                 <ol>
                     
-                    <li><a href="#customizing-installation">Customizing Installation  </a>
+                    <li><a href="#clean-installation">Clean Installation  </a>
             		</li>
 
                     <li><a href="#removing-files">Removing Files  </a>
@@ -340,18 +281,6 @@ import './App.css';
             		</li>
 
                     <li><a href="#app.js">App.js  </a>
-            		</li>
-
-                    <li><a href="#react-icons">React Icons  </a>
-            		</li>
-
-                    <li><a href="#importing-an-icon">Importing an Icon  </a>
-            		</li>
-
-                    <li><a href="#setting-tailwind-config">Setting Tailwind Config  </a>
-            		</li>
-
-                    <li><a href="#modifying-our-css">Modifying our CSS  </a>
             		</li>
                 </ol>
             </div>

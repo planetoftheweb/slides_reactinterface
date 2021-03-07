@@ -491,7 +491,7 @@ h3::selection {
 }
 
 .reveal-viewport.layout-title .slides h1 {
-  font-size: 2.2em;
+  font-size: 3.75em;
   color: var(--bs-yellow);
 }
 
